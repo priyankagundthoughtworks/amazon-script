@@ -65,5 +65,4 @@ public class AmazonTest extends Base {
         Thread.sleep(3000);
         login.clickOnSignOut();
     }
-
 }

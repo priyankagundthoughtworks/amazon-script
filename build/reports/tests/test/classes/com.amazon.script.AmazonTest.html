@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">13.446s</div>
+<div class="counter">11.525s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,107 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="searchBookAndAddToCart"></a>
-<h3 class="failures">searchBookAndAddToCart</h3>
-<span class="code">
-<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class='celwidget slot=MAIN template=SEARCH_RESULTS widgetId=search-results index=1']//img[@class='s-image']&quot;}
-  (Session info: chrome=81.0.4044.122)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Priyankas-MBP', ip: '2409:4042:696:d2e:3cd5:18d8:ae44:8f3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '11.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: /var/folders/q0/qkqd5b9j6gz...}, goog:chromeOptions: {debuggerAddress: localhost:62129}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: dfaec164da1da08920b523f3bdf8cf80
-*** Element info: {Using=xpath, value=//span[@class='celwidget slot=MAIN template=SEARCH_RESULTS widgetId=search-results index=1']//img[@class='s-image']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at com.amazon.pages.AddToCart.setSelectItem(AddToCart.java:36)
-	at com.amazon.script.AmazonTest.searchBookAndAddToCart(AmazonTest.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -172,63 +78,61 @@ Session ID: dfaec164da1da08920b523f3bdf8cf80
 </tr>
 </thead>
 <tr>
-<td class="failures">searchBookAndAddToCart</td>
-<td class="failures">13.446s</td>
-<td class="failures">failed</td>
+<td class="success">logoutToAmazon</td>
+<td class="success">11.525s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Starting ChromeDriver 81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}) on port 44909
+<pre>Starting ChromeDriver 81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}) on port 8784
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-Apr 27, 2020 5:30:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Apr 27, 2020 6:24:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1587988845.726][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988845.828][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988846.206][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988846.306][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988846.408][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988846.510][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988846.612][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988846.713][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988846.901][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988847.002][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988847.103][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988847.205][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988847.307][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988847.409][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988847.611][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988847.714][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988847.847][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988847.949][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988848.050][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988848.152][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988848.254][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988848.356][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988849.140][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988849.264][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988849.406][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988849.625][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988849.741][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988849.991][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988850.243][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988850.348][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988850.452][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988850.554][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988850.674][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988850.776][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988850.877][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988851.069][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988851.172][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988851.274][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988851.376][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988851.478][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988851.580][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988851.682][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587988851.785][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992042.918][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992043.020][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992043.122][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992043.223][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992043.325][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992043.427][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992043.544][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992043.810][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992043.912][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992044.057][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992044.160][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992044.263][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992044.364][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992044.466][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992044.568][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992044.689][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992044.791][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992044.976][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992045.077][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992045.262][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992045.365][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992045.466][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992045.568][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992045.670][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992045.771][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992046.488][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992046.591][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992046.694][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992046.796][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992046.979][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992047.080][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992047.182][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992047.284][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992047.536][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992047.639][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992048.526][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992050.789][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992050.889][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992050.992][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992051.094][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587992051.295][SEVERE]: Timed out receiving message from renderer: 0.100
 </pre>
 </span>
 </div>
@@ -240,7 +144,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 27-Apr-2020, 5:31:02 PM</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 27-Apr-2020, 6:24:17 PM</p>
 </div>
 </div>
 </body>
